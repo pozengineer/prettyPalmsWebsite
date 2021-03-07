@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Wrapper from './components/Wrapper/wrapper';
+import Footer from './components/Footer/footer';
+import PushDiv from './/components/Footer/pushDiv';
+import Landing from './components/pages/Landing/landing';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div className='App'>
+                <Wrapper />
+                <div className='appContainer'>
+                    <Switch>
+                        <Route exact path={["/", "/landing"]}>
+                            <Landing />
+                        </Route>
+                    </Switch>
+                </div>
+                <PushDiv />
+            </div>
+            <Footer />
+        </Router>
+    );
 }
 
 export default App;
