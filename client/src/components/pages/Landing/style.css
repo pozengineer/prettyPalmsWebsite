@@ -10,7 +10,7 @@
 
 h1 {
     font-family: 'Courgette', cursive, sans-serif;
-    color: #ffffff;
+    color: #4dacde;
     margin: 0;
     text-align: center;
     /* padding-top: 20px; */
@@ -45,6 +45,19 @@ hr {
     padding: 20px;
     background: rgba(0, 0, 0, 0.5) !important;
     margin-bottom: 10px;
+}
+
+.infoLine {
+    font-family: 'Courgette', cursive, sans-serif;
+    color: #4dacde;
+    margin: 0;
+    /* padding-top: 20px; */
+    /* padding-bottom: 20px; */
+    /* font-size: 28px; */
+}
+
+.boldHeading {
+    color: #ed4795;
 }
 
 .logoImage {
