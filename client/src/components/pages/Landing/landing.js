@@ -24,6 +24,22 @@ function Landing() {
                         </div>
                     </Col>
                 </Row>
+                <Row>
+                    <Col sm={12} md={12}>
+                        <div className='box02'>
+                            <h1 className='infoLine'> <b className='boldHeading'>Email:</b> info@prettypalms.com.au
+                            </h1>
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col sm={12} md={12}>
+                        <div className='box02'>
+                            <h1 className='infoLine'> <b className='boldHeading'>Mobile:</b> 0400 600 222
+                            </h1>
+                        </div>
+                    </Col>
+                </Row>
             </Container>
         </div>
     );
